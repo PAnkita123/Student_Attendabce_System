@@ -1,0 +1,28 @@
+#input{width:30%;
+    height:80px;
+    border:1px solid black;
+    justify-content: center;
+    margin:auto;
+    
+
+}
+
+#displayingStudentsList{
+    height:300px;
+    width:800px;
+    border:1px solid black;
+    margin-left: 200px;
+}
+
+#markingAttendence{
+    height:300px;
+    width:800px;
+    border:1px solid black;
+    justify-content: center;
+    margin-left: 200px;
+
+}
+
+h2{
+    margin-left:200px ;
+}
