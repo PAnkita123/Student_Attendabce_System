@@ -6,23 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/74285856ad.js" crossorigin="anonymous"></script>
     <title>Student attendence system</title>
 </head>
 
 <body>
-    <div id="input">
-        <label>Students Name</label><br /><br />
-        <input id="addingStudent" type="text" placeholder="add student here...."><br />
-        <button onclick="addStudent()">Add student</button><br />
+    <diV id="navbar">
+        <h1>Students Attendence System</h1>
+        <div id="input">
+            <label>
+                <emp>Students Name</emp>
+            </label><br />
+            <input id="addingStudent" type="text" placeholder="add student name here...."><br /><br />
+            <button onclick="addStudent()">Add student</button><br />
+        </div>
+        <diV id="sign-in">
+            <i class="fa-solid fa-user"></i><br/><br/>
+            <button>Log In</button>
+
+        </diV>
     </div>
-    <h2>Mark Attendence</h2>
+    <dIV id="mark">
+        <h2>Mark Attendence</h2>
+    </dIV>
     <diV id="markingAttendence">
 
     </diV>
-    <h2>Attendence Sheet</h2>
+
+    <div id="mark">
+        <h2>Attendence Sheet</h2>
+    </diV>
     <diV id="displayingStudentsList">
 
-    </diV>
+
+    </div>
 
     <script src="./java.js"></script>
 
