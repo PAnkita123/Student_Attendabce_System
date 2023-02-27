@@ -46,11 +46,11 @@
 }
 
 #displayingStudentsList{
-    height:300px;
-    width:800px;
-    border:1px solid grey;
-    margin-left: 200px;
-    margin-top: 50px;
+    height:50px;
+    width:680px;
+    border-left:1px solid grey;
+    /* margin-left: 200px; */
+    /* margin-top: 50px; */
     background-color: #F5F5F5;
     padding: 10px;
     display: flex;
@@ -103,4 +103,47 @@ h2{
 #presentDiv{
     display: flex;
     justify-content: space-evenly;
+}
+
+#attendence_sheet_bottom{
+    height:400px;
+    width:840px;
+    border: 1px solid black;
+    margin-left: 200px;
+    margin-top: 50px;
+    background-color: #F5F5F5;
+    /* padding: 10px; */
+    display: flex;
+}
+
+#attendence_sheet_bottom>div:nth-child(1){
+    height: 400px;
+    width: 100px;
+    border: none;
+    padding: 20px;
+}
+
+#first{
+    height: 330px;
+    width:100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+
+#date-section>div:nth-child(1){
+    height:50px;
+    width:100px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+#date-section>div:nth-child(2){
+    height:320px;
+    width:100px;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
 }

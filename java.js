@@ -124,3 +124,68 @@ function present(index) {
     }
 
 }
+
+
+
+// function displayingStudentsNameList(){
+//     var idFromHTML =Document.getElementById("studentsName")
+//     var dataFromLS= JSON.parse(localStorage.get("studentsList"));
+//     var nameArray =[];
+//     for(var i=0; i<dataFromLS.length; i++){
+//         nameArray =`<div>${dataFromLS[i].nameOfStudent}</div>`
+//     }
+//     idFromHTML.innerHTML=nameArray;
+
+// }
+// displayingStudentsNameList();
+
+function displayingStudentsAttendance() {
+    var for25 = document.getElementById("first");
+    console.log(for25,"for25")
+
+    var dataFromLS = JSON.parse(localStorage.getItem("StudentsList"));
+
+    var dates = [];
+    for (var k = 0; k < dataFromLS.length; k++) {
+        for (var l = 0; l < dataFromLS[k].attendance.length; l++) {
+            if (!dates.includes((Object.keys(dataFromLS[k].attendance[l])[0]))) {
+                dates.push((Object.keys(dataFromLS[k].attendance[l])[0]))
+            }
+
+        }
+    }
+    var finalArrayWithAtt = [];
+    var settingDates = ['2023-02-27']
+    for (var i = 0; i < dataFromLS.length; i++) {
+        // console.log(dataFromLs[i].attendance,"heree");
+        if (dataFromLS[i].attendance.length) {
+            for (var j = 0; j < dataFromLS[i].attendance.length; j++) {
+                for (var k = 0; k < settingDates.length; k++) {
+                    if (dataFromLS[i].attendance[j][settingDates[k]]) {
+                        // console.log((dataFromLs[i].attendance[j][settingDates[k]]), dataFromLs[i].nameOfStudent, dd[k])
+                        finalArrayWithAtt += `<div>${dataFromLS[i].attendance[j][settingDates[k]]}</div>`;
+                    }
+                }
+            }
+        } else {
+            finalArrayWithAtt += `<div>No data</div>`;
+        }
+    }
+    console.log(finalArrayWithAtt, 'gfdg')
+    for25.innerHTML = finalArrayWithAtt;
+
+    // 
+
+
+    // console.log(dates, "dates here")
+}
+displayingStudentsAttendance();
+
+
+
+
+
+
+
+
+
